@@ -1,0 +1,31 @@
+def troubleshoot_computer():
+    print("Welcome to my Computer Troubleshooting Program!")
+    
+    # Step 1: Check if the computer is plugged in
+    plugged_in = input("Is the computer plugged in? (yes/no): ").strip().lower()
+    if plugged_in != 'yes':
+        print("Please replug in the computer and try turning it on again.")
+        return
+
+    # Step 2: Check the power button
+    power_button = input("Is the power button lit up? (yes/no): ").strip().lower()
+    if power_button != 'yes':
+        print("Check if the power cable is securely connected to the computer and the packet.")
+        return
+
+    # Step 3: Check for any beeping sounds
+    beeping = input("Do you hear any beeping sounds when trying to turn it on? (yes/no): ").strip().lower()
+    if beeping == 'yes':
+        print("Beeping sounds may indicate a hardware issue. Please check your motherboard's for error codes.")
+        return
+
+    # Step 4: Check the monitor
+    monitor_on = input("Is the monitor turned on? (yes/no): ").strip().lower()
+    if monitor_on != 'yes':
+        print("Please turn on the monitor and check the connections.")
+        return
+
+    # Step 5: Final check
+    print("If system check is complete and error still persist, consider seeking professional help.")
+
+troubleshoot_computer()
